@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSPM Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body aurelia-app="main">
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <!--<script>
+        System.import("Person").then(useModule, handleError);
+        
+        function useModule(module) {
+            var person = new module.Person("John", "White");
+            console.log(person.firstName);
+            console.log(person.lastName);
+        }
+        
+        function handleError() {
+			console.log('Error');
+		}
+    </script>-->
+    <script>
+        System.import("aurelia-bootstrapper");
+    </script>
+</body>
+</html>
